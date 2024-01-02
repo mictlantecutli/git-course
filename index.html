@@ -20,8 +20,8 @@
 <body>
     <header>
         <h1 class="site-heading text-center text-faded d-none d-lg-block">
-            <span class="site-heading-upper text-primary mb-3">Git</span>
-            <span class="site-heading-lower">Learning Git</span>
+            <span class="site-heading-upper text-primary mb-3">Lesson 6</span>
+            <span class="site-heading-lower">Avoid Rejected Push Requests</span>
         </h1>
     </header>
     <!-- Navigation-->
@@ -80,7 +80,7 @@
     </section>
     <footer class="footer text-faded text-center py-5">
         <div class="container">
-            <p class="m-0 small">Copyright &copy; Your Website 2023</p>
+            <p>Git 2023</p>
         </div>
     </footer>
     <!-- Bootstrap core JS-->
@@ -104,5 +104,49 @@ TO PRINT THE COMMITS MORE UNDERTANDABLE
 
 
 
+
+    TO UNDO OR REMOVE ANY FILE IN THE STAGE
+>git reset HEAD index.html
+
+TO REMOVE A MISTAKE 'COMMITED'. HEAD~1 refers to the last commit before 
+>git reset --soft HEAD~1
+
+TO SET THE FILE UNSTAGED
+>git reset HEAD index.html
+
+
+UNDOING A PUSHED CHANGE IN THE REPOSITORY
+THIS CODE REMOVE THE LAST CHANGE UPDATED IN THE REPOSITORY
+>git revert HEAD
+
+
+//TO SEE THE CHANGES DIFFERENCES IN EVERY SAVINGS TO AVOID WRONGS
+>git diff
+
+-->
+
+<!--
+    //LESSON 06 Lesson 6, Step 1: Fetch and Merge Changes
+
+    //To ask for the remote changes is with the following code:
+    >git fetch
+    //THEN:
+    //IN THIS CASE THE ORIGIN IS THE BRANCH 06
+    >git merge origin/06
+-->
+
+<!--
+    //LESSON 06 Lesson 6, Step 2: Git Pull
+
+    //This combine fetch and merge, the code is the following. NOTE: IN THIS EXAMPLE '06' IS THE BRANCH WHERE WE ARE WORKING
+    >git pull origin 06
+   
+-->
+
+<!--LESSON 06 Step 3: Avoid Rejected Push Requests
+    this occur when we trying push some change in from local to
+    remote, but someone makes change in remote, so we need to pull before
+    the remote changes, and then push the local changes
+    
 
 -->
